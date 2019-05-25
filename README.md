@@ -1,0 +1,1 @@
+# Ssb Gossip Graphql Plugin
