@@ -21,9 +21,7 @@ module.exports = {
           }
           return change
         }),
-        pull.drain(gossip => {
-          return pubsub.publish(channel, { gossip })
-        })
+        pull.drain(gossip => pubsub.publish(channel, { gossip }))
       )
       return pubsub.asyncIterator(channel)
     },
